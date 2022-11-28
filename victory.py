@@ -28,6 +28,7 @@ while repeat_prog == 'да':
         print('Вы угадали год рождения А.И.Солженицына')
         correct_answer += 1
     print('Количество правильных ответов: ', correct_answer)
-    print('Количество ошибок: ', count_celeb-correct_answer)
-    print('Процент правильных ответов: ', correct_answer)
-
+    print('Количество ошибок: ', count_celeb - correct_answer)
+    print('Процент правильных ответов: ', (correct_answer * 100) / count_celeb, ' %')
+    print('Процент не правильных ответов: ', ((count_celeb - correct_answer) * 100) / count_celeb, ' %')
+    repeat_prog = input('Если хотите начать игру сначала, введите - да, если не хотите - введите нет')
